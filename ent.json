@@ -1,0 +1,40 @@
+{
+    "data": [
+        {
+            "created_at": "2023-11-09 18:57:06.581035",
+            "date": "2023-11-09",
+            "account": "spa",
+            "amount": "120",
+            "category": "food",
+            "comments": "projector hd",
+            "company": "Amazon.com"
+        },
+        {
+            "created_at": "2023-11-09 19:03:38.269178",
+            "date": "2023-11-08",
+            "account": "spr",
+            "amount": "200",
+            "category": "living",
+            "comments": "essen",
+            "company": "REWE"
+        },
+        {
+            "created_at": "2023-11-09 19:04:27.427689",
+            "date": "2023-11-07",
+            "account": "spr",
+            "amount": "250",
+            "category": "food",
+            "comments": "tv",
+            "company": "MediaMarkt"
+        },
+        {
+            "created_at": "2023-11-09 19:07:13.688115",
+            "date": "2023-11-07",
+            "account": "spr",
+            "amount": "300",
+            "category": "food",
+            "comments": "playstation 5",
+            "company": "MediaMarkt"
+        }
+    ]
+}
