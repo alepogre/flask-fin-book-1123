@@ -1,12 +1,16 @@
 from flask import Flask, render_template, request
 import datetime as dt
+from src import params
 import json, csv
 application = Flask(__name__)
 
 
 @application.route("/")
 def index():
-    return render_template('base.html')
+    cat_dict = params.categories
+    cat_options = cat_dict
+
+    return render_template('base.html', category_selection = cat_options)
 
 
 @application.route("/submit", methods=['POST'])
