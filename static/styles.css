@@ -1,10 +1,10 @@
 :root {
-
+  --ff-main: 'Roboto', sans-serif;
 }
 
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: var(--ff-main);
 }
 /* Navigation Bar */
 .navbar {
