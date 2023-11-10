@@ -10,24 +10,23 @@
     border-radius: 5px;
   }
   
-  
   label {
     display: block;
     margin-bottom: 8px;
   }
   
-  input,
-  select,
-  textarea {
+  input,select,textarea {
     width: 100%;
     padding: 8px;
     margin-bottom: 16px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    font-family: var(--ff-main);
   }
   
   select{
   height: 30px;
+  width: 105%;
   }
   
   .middle{
@@ -36,16 +35,17 @@
   
   .left, .right{
     width: 100%;
-    padding: 2rem;
+    padding: 0 2rem;
     display: flex;
     flex-direction: column;
+    /* border: 1px solid black; */
   }
   
   .bottom{
-    
     display: flex;
     justify-content: flex-end;
     padding: 0 1rem;
+    /* border: 1px solid black; */
   }
   
   button{
