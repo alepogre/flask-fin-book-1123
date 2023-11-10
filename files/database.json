@@ -44,6 +44,24 @@
             "category": "mobility",
             "comments": "test test",
             "company": "HUK24"
+        },
+        {
+            "created_at": "2023-11-10 15:36:49.735892",
+            "date": "2023-11-06",
+            "account": "spa",
+            "amount": "999",
+            "category": "activities",
+            "comments": "test",
+            "company": "TEST"
+        },
+        {
+            "created_at": "2023-11-10 15:38:27.003224",
+            "date": "2023-11-06",
+            "account": "spa",
+            "amount": "999",
+            "category": "activities",
+            "comments": "test",
+            "company": "TEST"
         }
     ]
 }
