@@ -1,8 +1,12 @@
+:root {
+
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
 }
-
+/* Navigation Bar */
 .navbar {
   overflow: hidden;
   background-color: #333;
@@ -30,6 +34,7 @@ body {
   padding: 60px 16px; /* Adjust the top padding to accommodate the fixed navbar */
 }
 
+/* Transaction Form */
 form{
   border: 1px solid black;
   margin: 0 auto;
@@ -84,6 +89,32 @@ button{
   border-radius: 10px;
   
 }
+
+/* Success Message */
+
+.message{
+  background-color: lime;
+  width: 50%;
+  margin: 4rem auto;
+  border: 1px solid black;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.msg-content{
+  padding: 1rem 2rem;
+}
+.msg-button{
+  justify-content: flex-end;
+  display: flex;
+  padding: 0 1rem;
+}
+
+
+
+
+
 
 @media screen and (max-width: 600px) {
   .navbar a {
