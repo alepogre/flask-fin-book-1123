@@ -22,137 +22,16 @@
     </nav>
 </header>
 
-<div class="content">
-    <!-- Your page content goes here -->
-    <div class="form-container">
-    <form action="/submit" method="post">
-        <div class="top">
-            <h2>New Transaction</h2>
-        </div>
-        <div class="middle">
-            <div class="left">
-                <label for="transaction_date">Date</label>
-                <input type="date" name="transaction_date" id="transaction_date" required>
 
-                <label for="account">Account</label>
-                <select name="account" id="account" required></select>
-
-                <label for="amount">Amount</label>
-                <input type="text" name="amount" id="amount" required>
-
-                <label for="type">Type</label>
-                <select name="type" id="type" required></select>
-
-
-                <label for="category">Category</label>
-                <select name="category" id="category" onchange="updateSubCat()">
-                </select>
-
-                <label for="sub-category">Sub Category</label>
-                <select name="sub-category" id="sub-category">
-                </select>
-
-            </div>
-            <div class="right">
-               
-                <label for="company">Company</label>
-                <input type="text" name="company" id="company" required>
-
-                <label for="audience">Audience</label>
-                <select name="audience" id="audience" required>
-                </select>
-
-                <label for="essential">Essential</label>
-                <select name="essential" id="essential" required>
-                    <option value="yes">Yes</option>
-                    <option value="no">No</option>
-                </select>
-
-
-                <label for="comments">Comments</label>
-                <textarea type="text-area" name="comments" id="comments" rows="10" cols="30">
-
-                </textarea>
-
-            </div>
-        </div>
-
-        <div class="bottom">
-            <button type="submit">Submit</button>
-        </div>
-    </form>
-</div>
-
-
-    <!-- <div class="form-container">
-        <div class="form-header">Form Header</div>
-        <div class="form-body">
-            <div class="left-container">
-                <label for="date">Date:</label>
-                <input type="date" id="date" name="date" required>
-
-                <label for="account">Account:</label>
-                <select id="account" name="account" required>
-                    <option value="savings">Savings</option>
-                    <option value="checking">Checking</option>
-                    
-                </select>
-
-                <label for="amount">Amount:</label>
-                <input type="number" id="amount" name="amount" required>
-
-                <label for="type">Type:</label>
-                <select id="type" name="type" required>
-                    <option value="income">Income</option>
-                    <option value="expense">Expense</option>
-                    
-                </select>
-
-                <label for="category">Category:</label>
-                <select id="category" name="category" required>
-                    <option value="groceries">Groceries</option>
-                    <option value="utilities">Utilities</option>
-                </select>
-
-                <label for="subcategory">Subcategory:</label>
-                <select id="subcategory" name="subcategory" required>
-                    <option value="sub1">Subcategory 1</option>
-                    <option value="sub2">Subcategory 2</option>
-                    
-                </select>
-            </div>
-
-            <div class="right-container">
-                <label for="company">Company:</label>
-                <input type="text" id="company" name="company" required>
-
-                <label for="audience">Audience:</label>
-                <select id="audience" name="audience" required>
-                    <option value="public">Public</option>
-                    <option value="private">Private</option>
-                    
-                </select>
-
-                <label for="essential">Essential:</label>
-                <select id="essential" name="essential" required>
-                    <option value="yes">Yes</option>
-                    <option value="no">No</option>
-                    
-                </select>
-
-                <label for="comment">Comment:</label>
-                <textarea id="comment" name="comment" rows="4"></textarea>
-            </div>
-        </div>
-        <div class="form-footer">
-            <button type="submit">Submit</button>
-        </div>
-    </div> -->
-
-
-</div>
 
 <script src="../static/js/cat.js"></script>
 
 </body>
+<footer>
+    <div class="footer-container">
+    </div>
+    <div class="footer-container2">
+        <p>KPD 2023</p>
+    </div>
+</footer>
 </html>

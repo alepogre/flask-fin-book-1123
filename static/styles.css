@@ -11,6 +11,7 @@ body {
   margin: 0;
   font-family: var(--ff-main);
   background-color: var(--cl-white);
+  font-size: 15px;
 }
 /* Navigation Bar */
 .navbar {
@@ -37,12 +38,33 @@ body {
   color: var(--cl-white);
 }
 
+
+footer{
+  bottom: 0;
+  position: fixed;
+  background-color: var(--cl-grey);
+  width: 100%;
+  display: flex;
+  color: var(--cl-black);
+  font-family: var(--ff-main);
+}
+
+.footer-container{
+  width: 100%;
+}
+
+
+.footer-container2{
+  width: 20%;
+  text-align: end;
+  padding: 0 1rem;
+}
+
 .content {
   padding: 60px 16px; /* Adjust the top padding to accommodate the fixed navbar */
 }
 
 /* Transaction Form */
-
 
 .form-container {
   max-width: 600px;
