@@ -100,12 +100,13 @@ button{
   border-radius: 20px;
   display: flex;
   flex-direction: column;
-  font.fa
+  font-family: var(--ff-main);
 }
 
 .msg-content{
   padding: 1rem 2rem;
 }
+
 .msg-button{
   justify-content: flex-end;
   display: flex;
