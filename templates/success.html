@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Finmaps</title>
-    <link rel="stylesheet" href="../static/styles.css">
+    <title>Home</title>
+    <link rel="stylesheet" href="../static/base.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<div class="navbar">
-    <a href="#home">Home</a>
-    <a href="#about">Transactions</a>
-    <a href="#services">Analytics</a>
-</div>
+<header>
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="{{url_for('index')}}" class="nav-element">HOME</a>
+            <a href="{{url_for('new_transaction')}}" class="nav-element">TRANSACTIONS</a>
+            <a href="" class="nav-element">ANALYTICS</a>
+            <a href="" class="nav-element">SAVINGS</a>
+            <a href="" class="nav-element">SETTINGS</a>
+        </div>
+
+    </nav>
+</header>
 
 <div class="content">
     <div class="message-container">
@@ -24,14 +29,23 @@
             <p class="message">Your Transaction has been saved successfully!</p>
         </div>
         <div class="msg-button">
-            <a href="base.html" class="button">Done</a>    
+            <a href="{{url_for('index')}}" class="button">Done</a>
         </div>
-        
+
     </div>
 
 </div>
 
+
 <script src="../static/js/cat.js"></script>
 
 </body>
+<footer>
+    <div class="footer-container">
+    </div>
+    <div class="footer-container2">
+        <p>KPD 2023</p>
+    </div>
+</footer>
 </html>
+

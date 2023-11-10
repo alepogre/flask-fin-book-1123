@@ -14,9 +14,12 @@ def create():
                 "date": request.form['transaction_date'],
                 "account": request.form['account'],
                 "amount": request.form['amount'],
-                "category": request.form['category'].lower(),
-                "comments": request.form['comments'].lower(),
+                "category": request.form['category'],
+                "sub-category": request.form['sub-category'],
                 "company": request.form['company'],
+                "audience": request.form['audience'],
+                "essential": request.form['essential'],
+                "comments": request.form['comments'],
     }
     return transaction
 

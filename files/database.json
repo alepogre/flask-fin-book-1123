@@ -71,6 +71,36 @@
             "category": "activities",
             "comments": "",
             "company": "Aldi"
+        },
+        {
+            "created_at": "2023-11-10 22:23:12.896974",
+            "date": "2023-11-10",
+            "account": "ComDirect",
+            "amount": "1999,90",
+            "category": "food",
+            "comments": "test order\r\n                ",
+            "company": "BurgerMe"
+        },
+        {
+            "created_at": "2023-11-10 22:25:10.522401",
+            "date": "2023-11-10",
+            "account": "ComDirect",
+            "amount": "1999,90",
+            "category": "food",
+            "comments": "test order\r\n                ",
+            "company": "BurgerMe"
+        },
+        {
+            "created_at": "2023-11-10 22:29:42.738930",
+            "date": "2023-11-02",
+            "account": "TradeRepublic",
+            "amount": "900",
+            "category": "Subscriptions",
+            "sub-category": "Internet",
+            "company": "Vodafone",
+            "audience": "Family",
+            "essential": "yes",
+            "comments": ""
         }
     ]
 }
