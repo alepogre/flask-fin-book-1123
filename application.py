@@ -1,8 +1,5 @@
 from flask import Flask, render_template, request
-import datetime as dt
-import src.params as params
-import src.transaction as transaction
-import json, csv
+from src.transaction import *
 
 
 application = Flask(__name__)
@@ -15,11 +12,9 @@ def index():
 
 @application.route("/submit", methods=['POST'])
 def submit():
-    # Fetch input from form and create JSON
+
     new_transaction = transaction.create()
-    # Append JSON to database
     transaction.append_entry(new_transaction)
-    
     return render_template("success.html")
     
 

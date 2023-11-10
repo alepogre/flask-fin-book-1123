@@ -166,43 +166,38 @@ function createSelectOptions(selected_dict, id_name) {
   }
 }
 
+// Function to create sub-category options
+
+// Object to store options for each main selection value
+
+function updateSubCat() {
+    let mainSelection = document.getElementById("category");
+    let secondarySelection = document.getElementById("sub-category");
+    
+    // Clear existing options
+    secondarySelection.innerHTML = "";
+    
+    // Get the selected value from the main selection
+    let selectedValue = mainSelection.value;
+    
+    // Add options based on the selected value using the optionsDict
+    categories[selectedValue].forEach(function(option) {
+      addOption(secondarySelection, option, option);
+    });
+    }
+    
+    function addOption(selectElement, value, text) {
+    let option = document.createElement("option");
+    option.value = value;
+    option.text = text;
+    selectElement.add(option);
+    }
+
 // Call the function to create select options
 createSelectOptions(selected_dict=categories, id_name="category");
 createSelectOptions(selected_dict=audience, id_name="audience");
 createSelectOptions(selected_dict=accounts, id_name="account");
 createSelectOptions(selected_dict=types, id_name="type");
 
-// Function to create sub-category options
-
-// Object to store options for each main selection value
-var optionsDict = {
-    option1: ["Sub-Option 1", "Sub-Option 2"],
-    option2: ["Sub-Option 3", "Sub-Option 4"],
-    option3: ["Sub-Option 5", "Sub-Option 6"]
-  };
-
-  function updateSubCat() {
-    let mainSelection = document.getElementById("category");
-    let secondarySelection = document.getElementById("sub-category");
-
-    // Clear existing options
-    secondarySelection.innerHTML = "";
-
-    // Get the selected value from the main selection
-    let selectedValue = mainSelection.value;
-
-    // Add options based on the selected value using the optionsDict
-    categories[selectedValue].forEach(function(option) {
-      addOption(secondarySelection, option, option);
-    });
-  }
-
-  function addOption(selectElement, value, text) {
-    let option = document.createElement("option");
-    option.value = value;
-    option.text = text;
-    selectElement.add(option);
-  }
-
-  // Initial population of secondary selection based on the default value of main selection
-  updateSubCat();
+// Initial population of secondary selection based on the default value of main selection
+updateSubCat();
