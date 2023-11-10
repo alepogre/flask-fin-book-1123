@@ -4,7 +4,7 @@ import json
 
 
 def create():
-    """Fetch input from form and create json"""
+    """Fetch input from form and create JSON"""
     
     creation_time = dt.datetime.utcnow()
     creating_at = str(creation_time)

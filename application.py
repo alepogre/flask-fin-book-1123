@@ -7,19 +7,17 @@ import json, csv
 
 application = Flask(__name__)
 
+
 @application.route("/")
 def index():
-    cat_dict = params.categories
-    cat_options = cat_dict
-
-    return render_template('base.html', category_selection = cat_options)
+    return render_template('base.html')
 
 
 @application.route("/submit", methods=['POST'])
 def submit():
-
+    # Fetch input from form and create JSON
     new_transaction = transaction.create()
-    
+    # Append JSON to database
     transaction.append_entry(new_transaction)
     
     return render_template("success.html")

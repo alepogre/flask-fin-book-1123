@@ -24,50 +24,20 @@
                 <input type="date" name="transaction_date" id="transaction_date" required>
 
                 <label for="account">Account</label>
-                <select name="account" id="account" required>
-                    <option value="spa">SPA</option>
-                    <option value="spr">SPR</option>
-                    <option value="ing">ING</option>
-                    <option value="cd">ComDirect</option>
-                    <option value="tr">TradeRepublic</option>
-                </select>
+                <select name="account" id="account" required></select>
 
                 <label for="amount">Amount</label>
                 <input type="text" name="amount" id="amount" required>
 
                 <label for="type">Type</label>
-                <select name="type" id="type" required>
-                    <option value="reg">Regular</option>
-                    <option value="var">Variable</option>
-                    <option value="fix">Fixed</option>
-                    <option value="ot">One Time</option>
-                </select>
+                <select name="type" id="type" required></select>
 
 
                 <label for="category">Category</label>
-                <select name="category" id="category" required>
-                    <option value="Activities">Activities</option>
-                    <option value="Baby">Baby</option>
-                    <option value="Cash">Cash</option>
-                    <option value="Education">Education</option>
-                    <option value="Fees">Fees</option>
-                    <option value="Food">Food</option>
-                    <option value="Gifts">Gifts</option>
-                    <option value="Healthcare">Healthcare</option>
-                    <option value="Income">Income</option>
-                    <option value="Insurance">Insurance</option>
-                    <option value="Living">Living</option>
-                    <option value="Mobility">Mobility</option>
-                    <option value="Other">Other</option>
-                    <option value="Services">Services</option>
-                    <option value="Shopping">Shopping</option>
-                    <option value="Subscriptions">Subscriptions</option>
-                    <option value="Work">Work</option>
-                </select>
+                <select name="category" id="category" required></select>
 
                 <label for="sub-category">Sub Category</label>
                 <select name="sub-category" id="sub-category">
-                    <option value="">Test</option>
                 </select>
 
             </div>
@@ -77,25 +47,18 @@
                 <input type="text" name="company" id="company" required>
 
                 <label for="audience">Audience</label>
-                <select name="audience" id="audience">
-                    <option value="razan">R</option>
-                    <option value="alex">A</option>
-                    <option value="family">F</option>
-                    <option value="dana">D</option>
-                    <option value="other">O</option>
+                <select name="audience" id="audience" required>
                 </select>
 
                 <label for="essential">Essential</label>
-                <select name="essential" id="essential">
+                <select name="essential" id="essential" required>
                     <option value="yes">Yes</option>
                     <option value="no">No</option>
                 </select>
 
 
-
-
                 <label for="comments">Comments</label>
-                <input type="text" name="comments" id="comments">
+                <input type="text-area" name="comments" id="comments">
 
             </div>
         </div>
@@ -105,6 +68,8 @@
         </div>
     </form>
 </div>
+
+<script src="../js/cat.js"></script>
 
 </body>
 </html>

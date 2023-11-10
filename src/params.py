@@ -130,7 +130,3 @@ categories = {
         "Equipment"
     ],
 }
-
-
-for key in categories:
-    print(key)
