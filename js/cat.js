@@ -129,7 +129,6 @@ const categories = {
     ],
 };
 
-
 const accounts = {
     SPA: "SPA",
     SPR: "SPR",
@@ -173,30 +172,37 @@ createSelectOptions(selected_dict=audience, id_name="audience");
 createSelectOptions(selected_dict=accounts, id_name="account");
 createSelectOptions(selected_dict=types, id_name="type");
 
+// Function to create sub-category options
 
-// // Function to populate sub-select based on the main selection
-// function populateSubSelect() {
-//     const mainSelect = document.getElementById('category');
-//     const subSelect = document.getElementById('sub-category');
-//     const selectedMain = mainSelect.value;
-//     const subOptions = categories[selectedMain];
+// Object to store options for each main selection value
+var optionsDict = {
+    option1: ["Sub-Option 1", "Sub-Option 2"],
+    option2: ["Sub-Option 3", "Sub-Option 4"],
+    option3: ["Sub-Option 5", "Sub-Option 6"]
+  };
 
-//     // Clear previous options
-//     // subSelect.innerHTML = '';
+  function updateSubCat() {
+    let mainSelection = document.getElementById("category");
+    let secondarySelection = document.getElementById("sub-category");
 
-//     // Populate sub-select based on the selected main category
-//     if (subOptions) {
-//         subOptions.forEach(option => {
-//         const opt = document.createElement('option');
-//         opt.textContent = option;
-//         opt.value = option;
-//         subSelect.appendChild(opt);
-//         });
-//     }
-// }
+    // Clear existing options
+    secondarySelection.innerHTML = "";
 
-// // Event listener for main select change
-// document.getElementById('mainSelect').addEventListener('change', populateSubSelect);
+    // Get the selected value from the main selection
+    let selectedValue = mainSelection.value;
 
-// // Initial population of sub-select based on the default value of main select
-// populateSubSelect();
+    // Add options based on the selected value using the optionsDict
+    categories[selectedValue].forEach(function(option) {
+      addOption(secondarySelection, option, option);
+    });
+  }
+
+  function addOption(selectElement, value, text) {
+    let option = document.createElement("option");
+    option.value = value;
+    option.text = text;
+    selectElement.add(option);
+  }
+
+  // Initial population of secondary selection based on the default value of main selection
+  updateSubCat();
