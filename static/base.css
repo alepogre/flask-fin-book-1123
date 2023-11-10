@@ -1,0 +1,84 @@
+:root {
+  --ff-main: 'Montserrat', sans-serif;
+  --cl-black: #000;
+  --cl-navy: #14213d;
+  --cl-orange: #fca311;
+  --cl-grey: #e5e5e5;
+  --cl-white: #edf2f4;
+}
+
+body {
+  margin: 0;
+  font-family: var(--ff-main);
+  background-color: var(--cl-white);
+  font-size: 15px;
+}
+/* Navigation Bar */
+.navbar {
+  overflow: hidden;
+  background-color: var(--cl-grey);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-element {
+  float: left;
+  display: block;
+  color: var(--cl-black);
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.nav-element:hover {
+  background-color: var(--cl-orange);
+  color: var(--cl-white);
+}
+
+
+footer{
+  bottom: 0;
+  position: fixed;
+  background-color: var(--cl-grey);
+  width: 100%;
+  display: flex;
+  color: var(--cl-black);
+  font-family: var(--ff-main);
+}
+
+.footer-container{
+  width: 100%;
+}
+
+
+.footer-container2{
+  width: 20%;
+  text-align: end;
+  padding: 0 1rem;
+}
+
+.content {
+  padding: 60px 16px; /* Adjust the top padding to accommodate the fixed navbar */
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+  .navbar a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+@media (max-width: 600px) {
+  .left-container,
+  .right-container {
+      max-width: 100%;
+  }
+}
+
