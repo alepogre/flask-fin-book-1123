@@ -13,6 +13,7 @@ def create():
                 "created_at": creating_at,
                 "date": request.form['transaction_date'],
                 "account": request.form['account'],
+                "spend-type": request.form['spend-type'],
                 "amount": request.form['amount'],
                 "category": request.form['category'],
                 "sub-category": request.form['sub-category'],
@@ -22,6 +23,14 @@ def create():
                 "comments": request.form['comments'],
     }
     return transaction
+
+
+def validate_transaction(transaction):
+    if "," in transaction['amount']:
+        transaction['amount'] = transaction['amount'].replace(",", ".")
+        print(transaction['amount'])
+    if transaction['spend-type'] == "spend":
+        transaction['amount'] = str(float(transaction['amount'])*(-1))
 
 
 def append_entry(transaction):

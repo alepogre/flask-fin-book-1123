@@ -21,6 +21,7 @@ def new_transaction():
 def submit():
 
     add_new_transaction = transaction.create()
+    transaction.validate_transaction(add_new_transaction)
     transaction.append_entry(add_new_transaction)
     return render_template("success.html")
     

@@ -101,6 +101,97 @@
             "audience": "Family",
             "essential": "yes",
             "comments": ""
+        },
+        {
+            "created_at": "2023-11-10 22:41:39.742880",
+            "date": "2023-11-10",
+            "account": "SPA",
+            "spend-type": "spend",
+            "amount": "200.32",
+            "category": "Activities",
+            "sub-category": "Day Trips",
+            "company": "PandaDoc",
+            "audience": "Alex",
+            "essential": "yes",
+            "comments": "                "
+        },
+        {
+            "created_at": "2023-11-10 22:45:04.924416",
+            "date": "2022-01-01",
+            "account": "SPA",
+            "spend-type": "spend",
+            "amount": "-21.23",
+            "category": "Activities",
+            "sub-category": "Day Trips",
+            "company": "Hallo",
+            "audience": "Alex",
+            "essential": "yes",
+            "comments": "                "
+        },
+        {
+            "created_at": "2023-11-10 23:21:06.152643",
+            "date": "2022-10-10",
+            "account": "SPA",
+            "spend-type": "income",
+            "amount": "Hallo",
+            "category": "Activities",
+            "sub-category": "Day Trips",
+            "company": "HiJank",
+            "audience": "Alex",
+            "essential": "yes",
+            "comments": "                "
+        },
+        {
+            "created_at": "2023-11-10 23:22:13.428306",
+            "date": "2021-10-10",
+            "account": "SPA",
+            "spend-type": "income",
+            "amount": "hallo",
+            "category": "Activities",
+            "sub-category": "Day Trips",
+            "company": "HaJla",
+            "audience": "Alex",
+            "essential": "yes",
+            "comments": "                "
+        },
+        {
+            "created_at": "2023-11-10 23:24:34.626794",
+            "date": "2021-01-01",
+            "account": "SPA",
+            "spend-type": "income",
+            "amount": "hallo",
+            "category": "Activities",
+            "sub-category": "Day Trips",
+            "company": "test test",
+            "audience": "Alex",
+            "essential": "yes",
+            "comments": "                "
+        },
+        {
+            "created_at": "2023-11-10 23:26:29.197208",
+            "date": "2023-09-14",
+            "account": "SPA",
+            "spend-type": "spend",
+            "amount": "-739.21",
+            "category": "Activities",
+            "sub-category": "Day Trips",
+            "company": "hehehe",
+            "audience": "Alex",
+            "essential": "yes",
+            "comments": "                "
+        },
+        {
+            "created_at": "2023-11-10 23:31:05.920828",
+            "date": "2022-12-10",
+            "account": "SPA",
+            "spend-type": "income",
+            "amount": "hallo",
+            "category": "Activities",
+            "sub-category": "Day Trips",
+            "company": "asdasd",
+            "audience": "Alex",
+            "essential": "yes",
+            "comments": "                "
         }
     ]
 }
