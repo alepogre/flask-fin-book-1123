@@ -1,0 +1,41 @@
+@import url(base.css);
+
+
+.main-container{
+    background-color: var(--cl-grey);
+    border-radius: 20px;
+    width: 100%;
+    max-width: 1440px;
+    border: 1px solid var(--cl-grey);
+    /* color: white; */
+}
+
+.tile-container{
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-around;
+    /* flex-wrap: wrap; */
+}
+
+.tile-element{
+    background-color:var(--cl-navy);
+    margin: 1rem;
+    width: 20%;
+    border-radius:20px;
+}
+
+.tile-content, .tile-description{
+    color: var(--cl-white);
+    font-weight: 500;
+}
+.tile-content{
+    font-size: 40px;
+    text-align: center;
+    padding: 1rem;
+    
+}
+
+.tile-description{
+    border-top: 1px solid var(--cl-orange);
+    padding: .9rem 1rem 0 1rem;
+}
